@@ -1,0 +1,22 @@
+﻿CREATE TABLE funcionarios (
+	id int NOT NULL,
+	id_naturalidade INT NOT NULL,
+	id_nacionalidade INT NOT NULL,
+	nome VARCHAR(250) NOT NULL,
+	data_nascimento DATE NOT NULL,
+	genero TINYINT NOT NULL,
+	cpf VARCHAR(14) NOT NULL,
+	email VARCHAR(250) NOT NULL,
+	telefone VARCHAR(14) NOT NULL,
+	telefone_contato VARCHAR(14),
+	cep VARCHAR(9) NOT NULL,
+	logradouro VARCHAR(250) NOT NULL,
+	numero INT(50) NOT NULL,
+	complemento VARCHAR(250),
+	bairro VARCHAR(250) NOT NULL,
+	municipio VARCHAR(250) NOT NULL,
+	uf VARCHAR(2) NOT NULL,
+	CONSTRAINT pk_funcionarios_id PRIMARY KEY (id),
+	CONSTRAINT fk_nacionalidades_id FOREIGN KEY (id_nacionalidade) REFERENCES nacionalidades(id),
+	CONSTRAINT fk_naturalidade_id FOREIGN KEY (id_naturalidade) REFERENCES naturalidade(id)
+);

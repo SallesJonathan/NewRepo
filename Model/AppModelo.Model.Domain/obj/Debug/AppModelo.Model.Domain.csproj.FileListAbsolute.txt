@@ -1,0 +1,6 @@
+C:\temp\projetosC#\Senai-ProjetoModelo-main\Model\AppModelo.Model.Domain\bin\Debug\AppModelo.Model.Domain.dll
+C:\temp\projetosC#\Senai-ProjetoModelo-main\Model\AppModelo.Model.Domain\bin\Debug\AppModelo.Model.Domain.pdb
+C:\temp\projetosC#\Senai-ProjetoModelo-main\Model\AppModelo.Model.Domain\obj\Debug\AppModelo.Model.Domain.csproj.AssemblyReference.cache
+C:\temp\projetosC#\Senai-ProjetoModelo-main\Model\AppModelo.Model.Domain\obj\Debug\AppModelo.Model.Domain.csproj.CoreCompileInputs.cache
+C:\temp\projetosC#\Senai-ProjetoModelo-main\Model\AppModelo.Model.Domain\obj\Debug\AppModelo.Model.Domain.dll
+C:\temp\projetosC#\Senai-ProjetoModelo-main\Model\AppModelo.Model.Domain\obj\Debug\AppModelo.Model.Domain.pdb
