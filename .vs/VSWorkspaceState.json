@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Controller\\AppModelo.Controller"
   ],
-  "SelectedNode": "\\C:\\Users\\ADMIN\\source\\repos\\senai_modelo2",
+  "SelectedNode": "\\AppModelo.sln",
   "PreviewInSolutionExplorer": false
 }
