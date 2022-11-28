@@ -70,6 +70,7 @@ namespace AppModelo.View.Windows.Helpers
                 }
                 VerificaTexto(c);
             }
+            
         }
     }
 }

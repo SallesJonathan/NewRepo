@@ -89,29 +89,31 @@ namespace AppModelo.View.Windows.Cadastros
         private void SaveButton_Click(object sender, EventArgs e)
         {
             {
-                var dataNascimento = Convert.ToDateTime(txtDataNascimento.Text);
-                int numero = int.Parse(txtEnderecoNumero.Text);
-                var obterIndexNacionalidade = cmbNacionalidade.SelectedValue;
-                var obterIndexNaturalidade = cmbNacionalidade.SelectedValue;
-                int nacionalidade = Convert.ToInt32(obterIndexNacionalidade);
-                int naturalidade = Convert.ToInt32(obterIndexNaturalidade);
-
-
-                var salvou = _funcionarioController.Cadastrar(txtNome.Text, dataNascimento, rbMasculino.Checked,
-                    txtEmail.Text, txtTelefone.Text, txtTelefoneContato.Text, txtEnderecoCep.Text, txtEnderecoLogradouro.Text,
-                    numero, txtEnderecoComplemento.Text, txtEnderecoBairro.Text, txtEnderecoMunicipio.Text, txtEnderecoUf.Text,
-                    nacionalidade, naturalidade);
-
-                if (salvou)
+                try
                 {
-                    MessageBox.Show("Cadastrado com sucesso");
+                    var dataNascimento = Convert.ToDateTime(txtDataNascimento.Text);
+                    int numero = int.Parse(txtEnderecoNumero.Text);
+                    var obterIndexNacionalidade = cmbNacionalidade.SelectedValue;
+                    var obterIndexNaturalidade = cmbNacionalidade.SelectedValue;
+                    int nacionalidade = Convert.ToInt32(obterIndexNacionalidade);
+                    int naturalidade = Convert.ToInt32(obterIndexNaturalidade);
+
+
+                    var salvou = _funcionarioController.Cadastrar(txtNome.Text, dataNascimento, rbMasculino.Checked,
+                        txtEmail.Text, txtTelefone.Text, txtTelefoneContato.Text, txtEnderecoCep.Text, txtEnderecoLogradouro.Text,
+                        numero, txtEnderecoComplemento.Text, txtEnderecoBairro.Text, txtEnderecoMunicipio.Text, txtEnderecoUf.Text,
+                        nacionalidade, naturalidade);
+
+                    MessageBox.Show("Salvo com sucesso");
+
+                    LimparDadosfrm.VerificaTexto(this);
                 }
-                else
+                catch (Exception err)
                 {
-                    MessageBox.Show("Erro ao cadastrar usuário");
+                    MessageBox.Show("Erro!" + err.Message);
+
                 }
 
-                LimparDadosfrm.VerificaTexto(this);
             }
         }
 
@@ -129,6 +131,6 @@ namespace AppModelo.View.Windows.Cadastros
             cmbNacionalidade.ValueMember = "id";
         }
 
-        
+
     }
 }
