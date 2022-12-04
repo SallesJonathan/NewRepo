@@ -53,10 +53,6 @@ namespace AppModelo.View.Windows.Helpers
                 {
                     ((MaskedTextBox)c).Text = "";
                 }
-                else if (c is Label)
-                {
-                    ((Label)c).Text = "";
-                }
                 else if (c is DataGridView)
                 {
                     ((DataGridView)c).DataSource = null;
@@ -70,7 +66,7 @@ namespace AppModelo.View.Windows.Helpers
                 }
                 VerificaTexto(c);
             }
-            
+
         }
     }
 }
