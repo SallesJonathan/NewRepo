@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppModelo.Model.Domain", "M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppModelo.Model.Infra", "Model\AppModelo.Model.Infra\AppModelo.Model.Infra.csproj", "{D723694E-BF48-45FC-8B3B-0DC158909AF4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1", "TestProject1\TestProject1.csproj", "{0B49B175-FC26-411B-9FEF-34EC077A4C73}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,26 @@ Global
 		{D723694E-BF48-45FC-8B3B-0DC158909AF4}.Release|x64.Build.0 = Release|Any CPU
 		{D723694E-BF48-45FC-8B3B-0DC158909AF4}.Release|x86.ActiveCfg = Release|Any CPU
 		{D723694E-BF48-45FC-8B3B-0DC158909AF4}.Release|x86.Build.0 = Release|Any CPU
+		{0B49B175-FC26-411B-9FEF-34EC077A4C73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B49B175-FC26-411B-9FEF-34EC077A4C73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B49B175-FC26-411B-9FEF-34EC077A4C73}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{0B49B175-FC26-411B-9FEF-34EC077A4C73}.Debug|ARM.Build.0 = Debug|Any CPU
+		{0B49B175-FC26-411B-9FEF-34EC077A4C73}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{0B49B175-FC26-411B-9FEF-34EC077A4C73}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{0B49B175-FC26-411B-9FEF-34EC077A4C73}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0B49B175-FC26-411B-9FEF-34EC077A4C73}.Debug|x64.Build.0 = Debug|Any CPU
+		{0B49B175-FC26-411B-9FEF-34EC077A4C73}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0B49B175-FC26-411B-9FEF-34EC077A4C73}.Debug|x86.Build.0 = Debug|Any CPU
+		{0B49B175-FC26-411B-9FEF-34EC077A4C73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B49B175-FC26-411B-9FEF-34EC077A4C73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B49B175-FC26-411B-9FEF-34EC077A4C73}.Release|ARM.ActiveCfg = Release|Any CPU
+		{0B49B175-FC26-411B-9FEF-34EC077A4C73}.Release|ARM.Build.0 = Release|Any CPU
+		{0B49B175-FC26-411B-9FEF-34EC077A4C73}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{0B49B175-FC26-411B-9FEF-34EC077A4C73}.Release|ARM64.Build.0 = Release|Any CPU
+		{0B49B175-FC26-411B-9FEF-34EC077A4C73}.Release|x64.ActiveCfg = Release|Any CPU
+		{0B49B175-FC26-411B-9FEF-34EC077A4C73}.Release|x64.Build.0 = Release|Any CPU
+		{0B49B175-FC26-411B-9FEF-34EC077A4C73}.Release|x86.ActiveCfg = Release|Any CPU
+		{0B49B175-FC26-411B-9FEF-34EC077A4C73}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
