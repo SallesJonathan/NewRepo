@@ -44,7 +44,7 @@ namespace AppModelo.View.Windows.Cadastros
         private void txtNome_Validating(object sender, CancelEventArgs e)
         {
             //primeira regra nome < que 6 letras
-            if (txtNome.Text.Length < 6)
+            if (txtNome.Text.Length < 6 || txtNome.Text == "")
             {
                 errorProvider.SetError(txtNome, "Digite seu nome completo");
                 return;
@@ -89,7 +89,8 @@ namespace AppModelo.View.Windows.Cadastros
         private void SaveButton_Click(object sender, EventArgs e)
         {
             {
-                try
+
+                if (ValidarForm())
                 {
                     var dataNascimento = Convert.ToDateTime(txtDataNascimento.Text);
                     int numero = int.Parse(txtEnderecoNumero.Text);
@@ -107,11 +108,6 @@ namespace AppModelo.View.Windows.Cadastros
                     MessageBox.Show("Salvo com sucesso");
 
                     LimparDadosfrm.VerificaTexto(this);
-                }
-                catch (Exception err)
-                {
-                    MessageBox.Show("Erro!" + err.Message);
-
                 }
 
             }
@@ -131,6 +127,47 @@ namespace AppModelo.View.Windows.Cadastros
             cmbNacionalidade.ValueMember = "id";
         }
 
+        private bool ValidarForm()
+        {
 
+            if (txtNome.Text == "")
+            {
+                MessageBox.Show("Preencha o campo! ");
+                txtNome.Focus();    
+                return false;
+            }
+            else if (txtDataNascimento.Text == "  /  /    ")
+            {
+                MessageBox.Show("Preencha o campo! ");
+                txtNome.Focus();
+                return false;
+            }
+            else if (txtCpf.Text == "   .   .   -  ")
+            {
+                MessageBox.Show("Preencha o campo! ");
+                txtNome.Focus();
+                return false;
+            }
+            else if (cmbNacionalidade.Text == "")
+            {
+                MessageBox.Show("Preencha o campo! ");
+                txtNome.Focus();
+                return false;
+            }
+            else if (cmbNaturalidade.Text == "")
+            {
+                MessageBox.Show("Preencha o campo! ");
+                txtNome.Focus();
+                return false;
+            }
+            else if (txtEnderecoCep.Text == "")
+            {
+                MessageBox.Show("Preencha o campo! ");
+                txtNome.Focus();
+                return false;
+            }
+            return true;    
+
+        } 
     }
 }

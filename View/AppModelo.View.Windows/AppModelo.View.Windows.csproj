@@ -109,7 +109,6 @@
     <Compile Include="Helpers\BuscarSeExisteNumeroNoTexto.cs" />
     <Compile Include="Helpers\CaixaVazia.cs" />
     <Compile Include="Helpers\FormatarCamposObrigatorios.cs" />
-    <Compile Include="Helpers\GerirDataGrid.cs" />
     <Compile Include="Helpers\LimparDadosfrm.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

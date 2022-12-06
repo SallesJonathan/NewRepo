@@ -110,14 +110,14 @@
             this.txtId.Location = new System.Drawing.Point(17, 133);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(69, 27);
-            this.txtId.TabIndex = 2;
+            this.txtId.TabIndex = 0;
             // 
             // txtNome
             // 
             this.txtNome.Location = new System.Drawing.Point(107, 133);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(217, 27);
-            this.txtNome.TabIndex = 4;
+            this.txtNome.TabIndex = 1;
             this.txtNome.Tag = "Obrigatorio";
             this.txtNome.Validating += new System.ComponentModel.CancelEventHandler(this.txtNome_Validating);
             // 
@@ -144,9 +144,9 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(340, 109);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(130, 20);
+            this.label5.Size = new System.Drawing.Size(124, 20);
             this.label5.TabIndex = 7;
-            this.label5.Text = "Data Nascimento*";
+            this.label5.Text = "Data Nascimento";
             // 
             // txtCpf
             // 
@@ -154,7 +154,7 @@
             this.txtCpf.Mask = "000.000.000-00";
             this.txtCpf.Name = "txtCpf";
             this.txtCpf.Size = new System.Drawing.Size(130, 27);
-            this.txtCpf.TabIndex = 8;
+            this.txtCpf.TabIndex = 5;
             this.txtCpf.Tag = "Obrigatorio";
             this.txtCpf.Validating += new System.ComponentModel.CancelEventHandler(this.txtCpf_Validating);
             // 
@@ -164,7 +164,7 @@
             this.txtDataNascimento.Mask = "00/00/0000";
             this.txtDataNascimento.Name = "txtDataNascimento";
             this.txtDataNascimento.Size = new System.Drawing.Size(127, 27);
-            this.txtDataNascimento.TabIndex = 9;
+            this.txtDataNascimento.TabIndex = 2;
             this.txtDataNascimento.Tag = "Obrigatorio";
             this.txtDataNascimento.ValidatingType = typeof(System.DateTime);
             // 
@@ -182,7 +182,7 @@
             this.txtEmail.Location = new System.Drawing.Point(17, 283);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(217, 27);
-            this.txtEmail.TabIndex = 11;
+            this.txtEmail.TabIndex = 8;
             // 
             // label7
             // 
@@ -199,7 +199,7 @@
             this.txtTelefone.Mask = "(##) #####-####";
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Size = new System.Drawing.Size(130, 27);
-            this.txtTelefone.TabIndex = 13;
+            this.txtTelefone.TabIndex = 9;
             // 
             // label8
             // 
@@ -241,7 +241,7 @@
             this.txtEnderecoNumero.Location = new System.Drawing.Point(362, 416);
             this.txtEnderecoNumero.Name = "txtEnderecoNumero";
             this.txtEnderecoNumero.Size = new System.Drawing.Size(109, 27);
-            this.txtEnderecoNumero.TabIndex = 19;
+            this.txtEnderecoNumero.TabIndex = 12;
             this.txtEnderecoNumero.Tag = "Obrigatorio";
             // 
             // label11
@@ -258,7 +258,7 @@
             this.txtEnderecoComplemento.Location = new System.Drawing.Point(491, 416);
             this.txtEnderecoComplemento.Name = "txtEnderecoComplemento";
             this.txtEnderecoComplemento.Size = new System.Drawing.Size(234, 27);
-            this.txtEnderecoComplemento.TabIndex = 21;
+            this.txtEnderecoComplemento.TabIndex = 13;
             // 
             // label12
             // 
@@ -326,7 +326,7 @@
             this.rbMasculino.Location = new System.Drawing.Point(506, 151);
             this.rbMasculino.Name = "rbMasculino";
             this.rbMasculino.Size = new System.Drawing.Size(94, 24);
-            this.rbMasculino.TabIndex = 28;
+            this.rbMasculino.TabIndex = 3;
             this.rbMasculino.TabStop = true;
             this.rbMasculino.Text = "Masculino";
             this.rbMasculino.UseVisualStyleBackColor = true;
@@ -337,7 +337,7 @@
             this.rbFeminino.Location = new System.Drawing.Point(506, 129);
             this.rbFeminino.Name = "rbFeminino";
             this.rbFeminino.Size = new System.Drawing.Size(87, 24);
-            this.rbFeminino.TabIndex = 29;
+            this.rbFeminino.TabIndex = 4;
             this.rbFeminino.TabStop = true;
             this.rbFeminino.Text = "Feminino";
             this.rbFeminino.UseVisualStyleBackColor = true;
@@ -360,7 +360,7 @@
             this.cmbNacionalidade.Location = new System.Drawing.Point(17, 204);
             this.cmbNacionalidade.Name = "cmbNacionalidade";
             this.cmbNacionalidade.Size = new System.Drawing.Size(156, 28);
-            this.cmbNacionalidade.TabIndex = 31;
+            this.cmbNacionalidade.TabIndex = 6;
             this.cmbNacionalidade.Tag = "Obrigatorio";
             this.cmbNacionalidade.Click += new System.EventHandler(this.cmbNacionalidade_Click);
             // 
@@ -369,9 +369,9 @@
             this.label17.AutoSize = true;
             this.label17.Location = new System.Drawing.Point(13, 181);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(112, 20);
+            this.label17.Size = new System.Drawing.Size(106, 20);
             this.label17.TabIndex = 32;
-            this.label17.Text = "Nacionalidade*";
+            this.label17.Text = "Nacionalidade";
             // 
             // label18
             // 
@@ -389,7 +389,7 @@
             this.cmbNaturalidade.Location = new System.Drawing.Point(194, 204);
             this.cmbNaturalidade.Name = "cmbNaturalidade";
             this.cmbNaturalidade.Size = new System.Drawing.Size(130, 28);
-            this.cmbNaturalidade.TabIndex = 33;
+            this.cmbNaturalidade.TabIndex = 7;
             this.cmbNaturalidade.Click += new System.EventHandler(this.cmbNaturalidade_Click);
             // 
             // txtTelefoneContato
@@ -398,7 +398,7 @@
             this.txtTelefoneContato.Mask = "(##) #####-####";
             this.txtTelefoneContato.Name = "txtTelefoneContato";
             this.txtTelefoneContato.Size = new System.Drawing.Size(130, 27);
-            this.txtTelefoneContato.TabIndex = 36;
+            this.txtTelefoneContato.TabIndex = 10;
             // 
             // label19
             // 
@@ -415,7 +415,7 @@
             this.txtEnderecoCep.Mask = "#####-###";
             this.txtEnderecoCep.Name = "txtEnderecoCep";
             this.txtEnderecoCep.Size = new System.Drawing.Size(130, 27);
-            this.txtEnderecoCep.TabIndex = 37;
+            this.txtEnderecoCep.TabIndex = 11;
             this.txtEnderecoCep.Tag = "Obrigatorio";
             // 
             // btnPesquisarCep
